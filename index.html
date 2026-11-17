@@ -82,7 +82,7 @@
   .project ul { margin: 0 0 14px; padding-left: 20px; }
   .project li { margin-bottom: 4px; }
   .project .stack { color: var(--slate); font-size: 15px; margin-bottom: 14px; }
-  .project .links { display: flex; gap: 18px; font-weight: 500; }
+  .project .links { display: flex; flex-wrap: wrap; gap: 18px; font-weight: 500; }
   .shot { margin: 0; border: 1.5px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--panel); }
   .shot img { display: block; width: 100%; height: auto; }
   .shot figcaption { font-size: 13px; color: var(--slate); padding: 10px 14px; border-top: 1px solid var(--line); }
@@ -150,7 +150,37 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <p class="lead">Four full-stack apps built with my team for the tournament, plus the website of my lyceum. On each team project I planned the work, designed the database and reviewed code.</p>
+      <p class="lead">Five full-stack apps built with my team for the tournament, plus the website of my lyceum. On each team project I planned the work, designed the database and reviewed code.</p>
+
+      <div class="project solo">
+        <div>
+          <h3>Lyceum European website</h3>
+          <span class="result">Live at european-lyceum.pp.ua</span>
+          <p>The official website of the lyceum where I studied for 11 years: 27 pages in Ukrainian and English, plus an admin panel where staff edit everything without touching code. I built about 90% of it.</p>
+          <ul>
+            <li>Public site: news, staff, documents, a virtual tour and profile-choice tests</li>
+            <li>Admin panel with login and one editor for 18 content types</li>
+            <li>Docker, Nginx and a database backup script</li>
+          </ul>
+          <div class="stack">Next.js, React, MUI, NextAuth, Prisma, PostgreSQL, Docker</div>
+          <div class="links"><a href="https://european-lyceum.pp.ua/">Open the site</a><a href="https://github.com/EuropeanLyceum/site">Source code</a></div>
+        </div>
+      </div>
+
+      <div class="project solo">
+        <div>
+          <h3>Tournament System</h3>
+          <span class="result">2026</span>
+          <p>A platform for running the SFL Programming Tournament 2026: teams, rounds, tasks per round, jury scoring, a leaderboard and PDF certificates.</p>
+          <ul>
+            <li>I built the whole frontend in React and TypeScript</li>
+            <li>Calendar and scheduling, live notifications over WebSocket, two languages</li>
+            <li>Led the team; the backend was mostly built by my teammate Vladyslav</li>
+          </ul>
+          <div class="stack">React 19, TypeScript, Vite, MUI, Spring Boot, Keycloak, PostgreSQL, Docker</div>
+          <div class="links"><a href="https://github.com/CoffeeProgrammers-3-0/tournament">Source code</a></div>
+        </div>
+      </div>
 
       <div class="project">
         <div>
@@ -196,8 +226,8 @@
           <p>Grades, subjects, class schedules and school news. Our first team project. 2nd place, 2024.</p>
         </article>
         <article>
-          <h3><a href="https://european-lyceum.pp.ua/">Lyceum European website</a></h3>
-          <p>The official website of the lyceum where I studied for 11 years, live and in use.</p>
+          <h3><a href="https://github.com/dexipua/B4SE1NA">Country Matcher</a></h3>
+          <p>University team project: ranks countries by how close they match your ideal profile, using World Bank data. Python and Streamlit.</p>
         </article>
         <article>
           <h3><a href="https://dexipua.github.io/linal-extern/">Linear algebra prep</a></h3>
@@ -212,7 +242,7 @@
       <div class="facts">
         <div>
           <h3>Tech I use</h3>
-          <p>Java, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, Flyway, React, MUI, Docker, Keycloak, JUnit, Git</p>
+          <p>Java, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, Flyway, React, TypeScript, Next.js, Prisma, MUI, Docker, Keycloak, JUnit, Git</p>
         </div>
         <div>
           <h3>Recognition</h3>
