@@ -1,0 +1,98 @@
+<!doctype html>
+<!-- Source of cv-uk.pdf. Regenerate: msedge --headless --no-pdf-header-footer --print-to-pdf=cv-uk.pdf cv-uk.html -->
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Артем Мосейченко, CV</title>
+<style>
+  @page { size: A4; margin: 11mm 13mm; }
+  body { margin: 0; color: #17233B; background: #fff; font: 9.2pt/1.34 "Segoe UI", Arial, sans-serif; }
+  .page { max-width: 184mm; margin: 0 auto; }
+  h1 { font-size: 21pt; margin: 0; letter-spacing: -0.01em; }
+  .role { font-size: 11.5pt; color: #2E7A50; font-weight: 600; margin: 2px 0 6px; }
+  .contacts { color: #556070; font-size: 9.5pt; }
+  .contacts a { color: inherit; text-decoration: none; }
+  h2 { font-size: 10.5pt; text-transform: uppercase; letter-spacing: .06em; color: #2E7A50;
+       border-bottom: 1px solid #D3DAD6; padding-bottom: 2px; margin: 9px 0 4px; }
+  p { margin: 0 0 4px; }
+  .item { margin-bottom: 5px; break-inside: avoid; }
+  .head { display: flex; justify-content: space-between; gap: 12px; }
+  .head b { font-size: 10.5pt; }
+  .head span { color: #556070; white-space: nowrap; }
+  .stack { color: #556070; font-size: 9pt; }
+  ul { margin: 2px 0 0; padding-left: 16px; }
+  li { margin-bottom: 1px; }
+  a { color: #17233B; }
+  .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; } .skills p b { display: inline-block; min-width: 72px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Артем Мосейченко</h1>
+  <div class="role">Java full-stack розробник · Spring Boot + React</div>
+  <div class="contacts">
+    Київ, Україна · <a href="mailto:ma.ua@outlook.com">ma.ua@outlook.com</a> ·
+    <a href="https://dexipua.github.io/uk/">dexipua.github.io/uk</a> ·
+    <a href="https://github.com/dexipua">github.com/dexipua</a> ·
+    <a href="https://www.linkedin.com/in/artem-moseichenko/">linkedin.com/in/artem-moseichenko</a>
+  </div>
+
+  <h2>Про мене</h2>
+  <p>Студент Київської школи економіки, спеціальність Computer Software Engineering. Керую CoffeeProgrammers, студентською командою, яка посіла <b>1 місце</b> на Всеукраїнському командному турнірі з програмування у 2025 році та 2 місце у 2024. Проєктую архітектуру й базу даних, розподіляю роботу, рев’юю код і пишу більшу частину бекенду. Шукаю стажування з Java або full-stack.</p>
+
+  <h2>Проєкти</h2>
+  <div class="item">
+    <div class="head"><b>Deadliner</b><span>Соло · 2026</span></div>
+    <p>Telegram-бот і вебдашборд, які нагадують студентам KSE про дедлайни в Moodle.</p>
+    <ul>
+      <li>Нагадування за 3 дні, 1 день і 3 години до дедлайну, кожне рівно один раз; тихі години, план на тиждень, кнопки в повідомленнях</li>
+      <li>Токени календаря зашифровані AES-GCM; вхід без пароля за одноразовими посиланнями, хешовані токени сесій, захист від CSRF</li>
+      <li>183 тести (JUnit 5, Mockito, Testcontainers зі справжньою PostgreSQL, MockMvc); CI на GitHub Actions; Docker</li>
+    </ul>
+    <div class="stack">Java 21, Spring Boot 4, Spring Data JPA, PostgreSQL, Flyway, React 19, TypeScript · <a href="https://github.com/dexipua/deadliner">github.com/dexipua/deadliner</a></div>
+  </div>
+  <div class="item">
+    <div class="head"><b>School-Voting</b><span>Тимлід · 1 місце, 2025</span></div>
+    <p>Петиції та шкільні голосування для учнів, учителів, батьків і директора. Я написав основу бекенду (сервіси голосувань і петицій, REST API, фільтрація), вхід і ролі через Keycloak, оновлення в реальному часі через WebSocket і більшість тестів бекенду.</p>
+    <div class="stack">Java 21, Spring Boot, React, PostgreSQL, Keycloak, Docker</div>
+  </div>
+  <div class="item">
+    <div class="head"><b>School-Calendar</b><span>Тимлід · 1 місце, 2025</span></div>
+    <p>Події, завдання, запрошення і сповіщення для школи. Я написав JWT-автентифікацію з access- і refresh-токенами, більшість сервісів бекенду, міграції бази даних і налаштування Docker Compose (83% поточного коду бекенду).</p>
+    <div class="stack">Java 21, Spring Boot, React, PostgreSQL, Docker</div>
+  </div>
+  <div class="item">
+    <div class="head"><b>Система для турніру</b><span>Тимлід · 2026</span></div>
+    <p>Платформа для турніру з програмування SFL 2026: тури, оцінювання журі, таблиця лідерів, PDF-сертифікати. Я зробив увесь фронтенд на React + TypeScript: розклад, сповіщення через WebSocket і дві мови.</p>
+    <div class="stack">React 19, TypeScript, Vite, MUI, Spring Boot, Keycloak, PostgreSQL, Docker</div>
+  </div>
+  <div class="item">
+    <div class="head"><b>Сайт Європейського ліцею</b><span>european-lyceum.pp.ua</span></div>
+    <p>Офіційний сайт мого ліцею, працює в продакшені: 27 сторінок українською та англійською й адмінпанель для 17 типів контенту. Я зробив близько 90% сайту.</p>
+    <div class="stack">Next.js, React, MUI, NextAuth, Prisma, PostgreSQL, Docker, Nginx</div>
+  </div>
+  <div class="item">
+    <div class="head"><b>Месенджер · Система управління школою</b><span>Тимлід · 2 місце, 2024</span></div>
+    <p>Месенджер у реальному часі й система оцінок і розкладу. Більша частина бекенду моя: JWT, WebSocket, тести.</p>
+    <div class="stack">Java, Spring Boot, React, WebSocket</div>
+  </div>
+
+  <h2>Навички</h2>
+  <div class="skills">
+    <p><b>Бекенд</b> Java, Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST, WebSocket (STOMP), MapStruct</p>
+    <p><b>Auth</b> JWT (access + refresh), Keycloak, OAuth2</p>
+    <p><b>Дані</b> PostgreSQL, Flyway, H2, Prisma</p>
+    <p><b>Фронтенд</b> React, TypeScript, Next.js, MUI, i18next</p>
+    <p><b>Тестування</b> JUnit 5, Mockito, Testcontainers, Spring Boot Test</p>
+    <p><b>Інструменти</b> Docker, Docker Compose, Git, GitHub Actions, Python, Claude Code</p>
+  </div>
+
+  <h2>Освіта й досягнення</h2>
+  <p><b>Київська школа економіки</b> · бакалаврат, Computer Software Engineering, навчаюся зараз</p>
+  <p>1 місце, Всеукраїнський командний турнір з програмування 2025 · 2 місце, 2024</p>
+  <p>Oracle Certified Associate, Java SE 8 · Член журі IT-програм Star for Life Ukraine</p>
+  <p><b>Мови:</b> українська (рідна), англійська, польська (A2)</p>
+</div>
+</body>
+</html>
