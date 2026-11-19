@@ -160,7 +160,26 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <p class="lead">Five full-stack apps built with my team for the tournament, plus the website of my lyceum. On each team project I planned the work, designed the database and reviewed code.</p>
+      <p class="lead">My solo project Deadliner, five full-stack apps built with my team for the tournament, and the website of my lyceum. On each team project I planned the work, designed the database and reviewed code.</p>
+
+      <div class="project">
+        <div>
+          <h3>Deadliner</h3>
+          <span class="result">Solo project, 2026</span>
+          <p>A Telegram bot and web dashboard that remind KSE students about their Moodle deadlines. Paste your Moodle calendar link once, and the bot reminds you 3 days, 1 day and 3 hours before each deadline.</p>
+          <ul>
+            <li>Each reminder is sent exactly once, with quiet hours, a weekly plan and ✅ Done / ⏰ +1 hour buttons</li>
+            <li>Calendar tokens encrypted with AES-GCM, passwordless one-time login links, CSRF protection</li>
+            <li>183 tests with JUnit, Mockito and Testcontainers on real PostgreSQL; CI on GitHub Actions</li>
+          </ul>
+          <div class="stack">Java 21, Spring Boot 4, Spring Data JPA, PostgreSQL, Flyway, React 19, TypeScript, Docker</div>
+          <div class="links"><a href="https://github.com/dexipua/deadliner">Source code</a></div>
+        </div>
+        <figure class="shot">
+          <img src="img/deadliner.png" width="780" height="900" alt="Deadliner dashboard listing upcoming deadlines grouped by day, with course names and due times" loading="lazy">
+          <figcaption>The web dashboard with upcoming deadlines</figcaption>
+        </figure>
+      </div>
 
       <div class="project solo">
         <div>
