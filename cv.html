@@ -1,0 +1,99 @@
+<!doctype html>
+<!-- Source of cv.pdf. Regenerate: msedge --headless --no-pdf-header-footer --print-to-pdf=cv.pdf cv.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artem Moseichenko, CV</title>
+<style>
+  @page { size: A4; margin: 11mm 13mm; }
+  body { margin: 0; color: #17233B; background: #fff; font: 9.4pt/1.36 "Segoe UI", Arial, sans-serif; }
+  .page { max-width: 184mm; margin: 0 auto; }
+  h1 { font-size: 21pt; margin: 0; letter-spacing: -0.01em; }
+  .role { font-size: 11.5pt; color: #2E7A50; font-weight: 600; margin: 2px 0 6px; }
+  .contacts { color: #556070; font-size: 9.5pt; }
+  .contacts a { color: inherit; text-decoration: none; }
+  h2 { font-size: 10.5pt; text-transform: uppercase; letter-spacing: .06em; color: #2E7A50;
+       border-bottom: 1px solid #D3DAD6; padding-bottom: 2px; margin: 9px 0 4px; }
+  p { margin: 0 0 4px; }
+  .item { margin-bottom: 5px; break-inside: avoid; }
+  .head { display: flex; justify-content: space-between; gap: 12px; }
+  .head b { font-size: 10.5pt; }
+  .head span { color: #556070; white-space: nowrap; }
+  .stack { color: #556070; font-size: 9pt; }
+  ul { margin: 2px 0 0; padding-left: 16px; }
+  li { margin-bottom: 1px; }
+  a { color: #17233B; }
+  .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; } .skills p b { display: inline-block; min-width: 62px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Artem Moseichenko</h1>
+  <div class="role">Java full-stack developer · Spring Boot + React</div>
+  <div class="contacts">
+    Kyiv, Ukraine · <a href="mailto:ma.ua@outlook.com">ma.ua@outlook.com</a> ·
+    <a href="https://dexipua.github.io">dexipua.github.io</a> ·
+    <a href="https://github.com/dexipua">github.com/dexipua</a> ·
+    <a href="https://www.linkedin.com/in/artem-moseichenko/">linkedin.com/in/artem-moseichenko</a>
+  </div>
+
+  <h2>Summary</h2>
+  <p>Computer Software Engineering student at Kyiv School of Economics. I lead CoffeeProgrammers, a student team that won <b>1st place</b> at the All-Ukrainian Team Programming Tournament in 2025 and 2nd place in 2024. I design the architecture and database, split the work, review code and write most of the backend. Looking for a Java or full-stack internship in Kyiv, hybrid or remote.</p>
+
+  <h2>Projects</h2>
+  <div class="item">
+    <div class="head"><b>Deadliner</b><span>Solo · 2026</span></div>
+    <p>Telegram bot and web dashboard that remind KSE students about Moodle deadlines.</p>
+    <ul>
+      <li>Reminders 3 days, 1 day and 3 hours before each deadline, each sent exactly once; quiet hours, weekly plan, inline buttons</li>
+      <li>Calendar tokens encrypted with AES-GCM; passwordless one-time login links, hashed session tokens, CSRF protection</li>
+      <li>183 tests (JUnit 5, Mockito, Testcontainers on real PostgreSQL, MockMvc); CI on GitHub Actions; Docker image with daily backups</li>
+    </ul>
+    <div class="stack">Java 21, Spring Boot 4, Spring Data JPA, PostgreSQL, Flyway, React 19, TypeScript · <a href="https://github.com/dexipua/deadliner">github.com/dexipua/deadliner</a></div>
+  </div>
+  <div class="item">
+    <div class="head"><b>School-Voting</b><span>Team lead · 1st place, 2025</span></div>
+    <p>Petitions and school votes for students, teachers, parents and the director. I wrote the core backend (voting and petition services, REST API, filtering), Keycloak login and roles, live updates over WebSocket and most of the backend tests.</p>
+    <div class="stack">Java 21, Spring Boot, React, PostgreSQL, Keycloak, Docker</div>
+  </div>
+  <div class="item">
+    <div class="head"><b>School-Calendar</b><span>Team lead · 1st place, 2025</span></div>
+    <p>Events, tasks, invitations and notifications for a school. I wrote JWT auth with access and refresh tokens, most backend services, database migrations and the Docker Compose setup (83% of current backend code).</p>
+    <div class="stack">Java 21, Spring Boot, React, PostgreSQL, Docker</div>
+  </div>
+  <div class="item">
+    <div class="head"><b>Tournament System</b><span>Team lead · 2026</span></div>
+    <p>Platform for the SFL Programming Tournament 2026: rounds, jury scoring, leaderboard, PDF certificates. I built the whole React + TypeScript frontend, including scheduling, WebSocket notifications and two languages.</p>
+    <div class="stack">React 19, TypeScript, Vite, MUI, Spring Boot, Keycloak, PostgreSQL, Docker</div>
+  </div>
+  <div class="item">
+    <div class="head"><b>Lyceum European website</b><span>european-lyceum.pp.ua</span></div>
+    <p>Official website of my lyceum, live in production: 27 pages in Ukrainian and English and an admin panel for 17 content types. I built about 90% of it.</p>
+    <div class="stack">Next.js, React, MUI, NextAuth, Prisma, PostgreSQL, Docker, Nginx</div>
+  </div>
+  <div class="item">
+    <div class="head"><b>Messenger · School management system</b><span>Team lead · 2nd place, 2024</span></div>
+    <p>Real-time messenger and a grades and schedules system. I wrote most of the backend: JWT auth, WebSocket messaging, tests.</p>
+    <div class="stack">Java, Spring Boot, React, WebSocket</div>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <p><b>Backend</b> Java, Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST, WebSocket (STOMP), MapStruct</p>
+    <p><b>Auth</b> JWT (access + refresh), Keycloak, OAuth2</p>
+    <p><b>Data</b> PostgreSQL, Flyway, H2, Prisma</p>
+    <p><b>Frontend</b> React, TypeScript, Next.js, MUI, i18next</p>
+    <p><b>Testing</b> JUnit 5, Mockito, Testcontainers, Spring Boot Test</p>
+    <p><b>Tools</b> Docker, Docker Compose, Git, GitHub Actions, Python, Claude Code</p>
+  </div>
+
+  <h2>Education and awards</h2>
+  <p><b>Kyiv School of Economics</b> · BSc Computer Software Engineering, in progress</p>
+  <p>1st place, All-Ukrainian Team Programming Tournament 2025 · 2nd place, 2024</p>
+  <p>Oracle Certified Associate, Java SE 8 · Jury member at Star for Life Ukraine IT programs</p>
+  <p><b>Languages:</b> Ukrainian (native), English, Polish (A2)</p>
+
+</div>
+</body>
+</html>
